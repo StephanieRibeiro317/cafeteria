@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+font-family: "Libre Baskerville", serif;
+font-family: 'Hind Vadodara', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+body{
+    font-family: 'Libre baskerville', serif !important;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+h5,h6{ 
+    font-family: "Libre Baskerville", serif !important;
+}
+.libre-berkerville {
+    font-family: "Libre Baskerville", serif !important;
+}
+.hind-vadodara {
+    font-family: 'Hind Vadodara', sans-serif !important;
+}
+.hind-vadodara-light {
+    font-family: 'Hind Vadodara', sans-serif !important;
+  }
