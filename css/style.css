@@ -5,8 +5,20 @@ font-family: "Libre Baskerville", serif;
 font-family: 'Hind Vadodara', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
+:root {
+    --margin-menu: 4rem;
+}
 
-body{
+.logotipo-menu {
+    /* utilize a medida rem para melhor responsividade */
+    height: var(--margin-menu);
+}
+
+#banner {
+    margin-top: var(--margin-menu);
+}
+
+body {
     font-family: 'Libre baskerville', serif !important;
 }
 
@@ -14,15 +26,173 @@ h1, h2, h3, h4 {
     font-family: 'Raleway', sans-serif !important;
 }
 
-h5,h6{ 
+h5, h6 {
     font-family: "Libre Baskerville", serif !important;
 }
+
 .libre-berkerville {
     font-family: "Libre Baskerville", serif !important;
 }
+
 .hind-vadodara {
     font-family: 'Hind Vadodara', sans-serif !important;
 }
+
 .hind-vadodara-light {
     font-family: 'Hind Vadodara', sans-serif !important;
-  }
+}
+
+.bg-menu {
+    background-color: #260F0D;
+}
+
+.titulo-principal{
+    font-size: calc(2.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px){
+
+}
+
+.btn-green{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #734939;
+    --bs-btn-border-color: #734939;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #260F0D;
+    --bs-btn-hover-border-color: #146c43;
+    --bs-btn-focus-shadow-rgb: 60, 153, 110;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #260F0D;
+    --bs-btn-active-border-color: #260F0D;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #260F0D;
+    --bs-btn-disabled-border-color: #260F0D;
+}
+
+.card-banner{
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.card-banner:hover{
+    background-color: #734939;
+}
+
+
+.img-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+.bg-success-subtle {
+  background-color: var(--bs-success-bg-subtle) !important;
+}
+
+.icone{
+    font-size: 2rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    color: white;
+    background-color: #734939;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    padding: 0.45rem;
+    margin-bottom: 0.625rem;
+}
+
+/* Faz imagem acompanhar a altura dos cards */
+.img-diferenciais {
+  object-fit: cover;
+}
+
+/* Garante que a coluna da imagem tenha altura total */
+#diferenciais .col-lg-6 {
+  height: 100%;
+}
+
+/* Ajusta altura mínima do conjunto de cards */
+#diferenciais .row.g-4 {
+  height: 100%;
+}
+
+.bg-brown-subtle {
+  background-color: #734939; /* marrom claro */
+}
+
+
+
+footer {
+    background-color: #734939;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Fundo com efeito vidro */
+.modal-coffee {
+    background: linear-gradient(135deg, #2c1b1b, #3a2323);
+    color: #fff;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    animation: modalFade 0.4s ease;
+}
+
+/* Animação suave */
+@keyframes modalFade {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Imagem elegante */
+.imagem-wrapper img {
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Preço destacado */
+.preco {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5c27a;
+}
+
+/* Botão sofisticado */
+.btn-coffee {
+    background: linear-gradient(45deg, #6b3f3f, #8b5a2b);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-coffee:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.modal-backdrop.show {
+    backdrop-filter: blur(6px);
+    background-color: rgba(0,0,0,0.6);
+}
