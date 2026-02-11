@@ -196,3 +196,19 @@ footer {
     backdrop-filter: blur(6px);
     background-color: rgba(0,0,0,0.6);
 }
+/* css dos cards de experiência */
+
+
+.card-experience {
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.card-experience:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.text-brown {
+    color: #6b3f3f;
+}
