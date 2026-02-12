@@ -37,6 +37,7 @@ function alterarScroll() {
     }
 }
 
+// Formulário de contato
 document.getElementById('formContato').addEventListener('submit', function(event) {
   event.preventDefault();
 
