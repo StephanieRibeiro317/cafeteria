@@ -196,6 +196,24 @@ footer {
     backdrop-filter: blur(6px);
     background-color: rgba(0,0,0,0.6);
 }
+
+/* Botão marrom em ver mais */
+.btn-brown {
+    background: linear-gradient(45deg, #5a2e2e, #8b5a2b);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 22px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-brown:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+
 /* css dos cards de experiência */
 
 
@@ -212,3 +230,25 @@ footer {
 .text-brown {
     color: #6b3f3f;
 }
+
+.croll-top{ 
+    height: 44px;
+    width: 44px;
+    padding-top: 10px;
+}
+
+.croll-top i{
+    font-size: 1rem;
+}
+
+/*css do contato */
+
+#contato form {
+    border-radius: 18px;
+}
+
+.form-control:focus {
+    border-color: #6b3f3f;
+    box-shadow: 0 0 0 0.2rem rgba(107, 63, 63, 0.2);
+}
+
